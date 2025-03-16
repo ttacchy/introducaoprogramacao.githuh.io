@@ -1,11 +1,11 @@
 <script>
     if(Notification.permission === "granted") {
-        new Notification("Hello, World!");
+        new Notification(console.log("Hello, World!"));
     }
     else{
         Notification.requestPermission().then(permission => {
             if(permission === "granted") {
-                new Notification("Hello, World!");
+                new Notification(console.log("Hello, World!"));
             }
         });
     }
